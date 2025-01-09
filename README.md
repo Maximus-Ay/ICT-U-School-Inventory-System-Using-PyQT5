@@ -59,18 +59,18 @@ Run the application:python main.py
 ## ✨ Contribution Guidelines
 We welcome contributions! Please follow these steps to contribute:
 
-Fork the repository.
-Create a feature branch:git checkout -b feature-name
-Commit your changes:Copy code
-git commit -m "Add feature description"
-Push the branch:Copy code
-git push origin feature-name
-Create a pull request on GitHub.
+- Fork the repository.
+- Create a feature branch:git checkout -b feature-name
+- Commit your changes:Copy code
+- git commit -m "Add feature description"
+- Push the branch:Copy code
+- git push origin feature-name
+- Create a pull request on GitHub.
 
 ## 🙏 Acknowledgments
-Course: Agile Professional
-Lecturer: Dr. Keyampi Martial
-Institution: The ICT University
+Course: Agile Professional  
+Lecturer: Dr. Keyampi Martial  
+Institution: The ICT University  
 Framework: PyQT5
 
 ## 📜 License
@@ -79,6 +79,6 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 ## 📧 Contact
 For questions or feedback, please reach out to:
 
-Your Name: thedevelopermax@gmail.com
-GitHub: Maximus-Ay
+Your Name: thedevelopermax@gmail.com  
+GitHub: Maximus-Ay  
 Happy coding! 🎉
