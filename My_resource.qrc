@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>ICT logo.png</file>
+  </qresource>
+</RCC>

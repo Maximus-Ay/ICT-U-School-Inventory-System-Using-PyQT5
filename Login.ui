@@ -14,20 +14,26 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="ICTU_Image">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>200</y>
-      <width>721</width>
-      <height>91</height>
+      <x>390</x>
+      <y>90</y>
+      <width>291</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 36pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>THIS IS THE LOGIN PAGE</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="My_resource.qrc">:/Images/ICT logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -43,6 +49,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="My_resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
