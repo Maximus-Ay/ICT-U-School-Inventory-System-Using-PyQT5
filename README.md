@@ -79,6 +79,6 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 ## 📧 Contact
 For questions or feedback, please reach out to:
 
-Your Name: thedevelopermax@gmail.com  
+Your Name: thedevelopermax@gmail.com \\
 GitHub: Maximus-Ay  
 Happy coding! 🎉
