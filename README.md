@@ -39,22 +39,14 @@ Ensure you have the following installed:
   pip install pyqt5
   SQLite3: (Usually bundled with Python)
 ## Installation
-Clone the repository: https://github.com/your-username/ICT-U-School-Inventory-System-Using-PyQT5.git
-Navigate to the project directory:cd ICT-U-School-Inventory-System-Using-PyQT5
-Install dependencies:pip install -r requirements.txt
+Clone the repository: https://github.com/your-username/ICT-U-School-Inventory-System-Using-PyQT5.git  
+Navigate to the project directory:cd ICT-U-School-Inventory-System-Using-PyQT5  
+Install dependencies:pip install -r requirements.txt  
 Run the application:python main.py
 ## 📂 Project Structure
 
 ## ICT-U-School-Inventory-System-Using-PyQT5/
-│
-├── main.py                 # Entry point for the application
-├── ui/                     # Contains PyQT5 UI files
-├── database/               # Database files (e.g., SQLite database)
-├── modules/                # Core Python modules (business logic, utilities, etc.)
-├── assets/                 # Static files (icons, images, etc.)
-├── README.md               # Project documentation
-├── requirements.txt        # Python dependencies
-└── LICENSE                 # License for the project
+
 
 ## ✨ Contribution Guidelines
 We welcome contributions! Please follow these steps to contribute:
@@ -79,6 +71,6 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 ## 📧 Contact
 For questions or feedback, please reach out to:
 
-Your Name: thedevelopermax@gmail.com \\
+Your Name: thedevelopermax@gmail.com  
 GitHub: Maximus-Ay  
 Happy coding! 🎉
