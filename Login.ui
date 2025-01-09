@@ -17,45 +17,16 @@
    <iconset>
     <normaloff>ICT logo.png</normaloff>ICT logo.png</iconset>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>420</y>
-     <width>391</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;</string>
-   </property>
-   <property name="text">
-    <string>School Inventory</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>480</y>
-     <width>171</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;</string>
-   </property>
-   <property name="text">
-    <string>System</string>
-   </property>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
   <widget class="QPushButton" name="login_btn">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>570</y>
-     <width>231</width>
-     <height>61</height>
+     <x>0</x>
+     <y>0</y>
+     <width>531</width>
+     <height>751</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -68,33 +39,27 @@
     padding: 5px; /* Optional padding for better aesthetics */
 }
 
-QPushButton:hover {
-    background-color: rgb(72, 28, 200); /* Slightly lighter shade on hover */
-    border: 2px solid rgb(62, 18, 180); /* Change border color on hover */
-}
 
-QPushButton:pressed {
-    background-color: rgb(32, 0, 120); /* Darker shade when pressed */
-    border: 2px solid rgb(20, 0, 90); /* Change border color when pressed */
-    color: lightgray; /* Optional: change text color when pressed */
-}
+
+
 </string>
    </property>
    <property name="text">
-    <string>Login</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="ICTU_Image">
    <property name="geometry">
     <rect>
-     <x>360</x>
+     <x>110</x>
      <y>80</y>
      <width>291</width>
      <height>321</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 36pt &quot;MS Shell Dlg 2&quot;;</string>
+    <string notr="true">font: 36pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(52, 0, 156)</string>
    </property>
    <property name="text">
     <string/>
@@ -104,6 +69,125 @@ QPushButton:pressed {
    </property>
    <property name="scaledContents">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>420</y>
+     <width>391</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
+color: #FFA500;
+background-color: rgb(52, 0, 156);</string>
+   </property>
+   <property name="text">
+    <string>School Inventory</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>490</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
+color: #FFA500;
+background-color: rgb(52, 0, 156);</string>
+   </property>
+   <property name="text">
+    <string>System</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>670</y>
+     <width>391</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 12pt &quot;Arial&quot;;
+color: #FFA500;
+background-color: rgb(52, 0, 156);</string>
+   </property>
+   <property name="text">
+    <string>© Copyright Agile Professional Group 19</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>110</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(52, 0, 156);</string>
+   </property>
+   <property name="text">
+    <string>LOGIN</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>250</y>
+     <width>341</width>
+     <height>61</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>380</y>
+     <width>341</width>
+     <height>61</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="login_btn_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>520</y>
+     <width>341</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 10px;
+    font: 18pt &quot;MS Shell Dlg 2&quot;;
+    color: white;
+    background-color: rgb(52, 0, 156); /* Initial background color */
+    border: 2px solid rgb(40, 0, 120); /* Optional border */
+    padding: 5px; /* Optional padding for better aesthetics */
+}
+
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>LOGIN</string>
    </property>
   </widget>
  </widget>
