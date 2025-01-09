@@ -1,8 +1,8 @@
 from PyQt5 import QtWidgets, uic
 import sys
 
-class LoginWindow(QtWidgets.QMainWindow):
+class WelcomeWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         # Load the UI file
-        uic.loadUi("Login.ui", self)
+        uic.loadUi("Welcome.ui", self)

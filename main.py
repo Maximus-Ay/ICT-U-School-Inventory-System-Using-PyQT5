@@ -1,10 +1,10 @@
 from PyQt5 import QtWidgets
 import sys
-from login import LoginWindow
+from Welcome import WelcomeWindow
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
-    window = LoginWindow()
+    window = WelcomeWindow()
     window.show()
     sys.exit(app.exec_())
 
