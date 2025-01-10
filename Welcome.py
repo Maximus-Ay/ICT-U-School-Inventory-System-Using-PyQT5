@@ -1,8 +1,15 @@
 from PyQt5 import QtWidgets, uic
-import sys
 
-class WelcomeWindow(QtWidgets.QMainWindow):
-    def __init__(self):
+class WelcomeWindow(QtWidgets.QWidget):
+    def __init__(self, stacked_widget):
         super().__init__()
-        # Load the UI file
+        # Load the Welcome UI
         uic.loadUi("Welcome.ui", self)
+        self.stacked_widget = stacked_widget
+
+        # Connect the button to switch to the Login page
+        self.welcome_btn.clicked.connect(self.go_to_login)
+
+    def go_to_login(self):
+        """Switch to the Login page."""
+        self.stacked_widget.setCurrentIndex(1)  # Index of Login page

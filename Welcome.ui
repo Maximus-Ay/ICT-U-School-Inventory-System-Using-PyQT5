@@ -49,7 +49,7 @@
     <string>System</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="login_btn">
+  <widget class="QPushButton" name="welcome_btn">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -81,7 +81,7 @@ QPushButton:pressed {
 </string>
    </property>
    <property name="text">
-    <string>Login</string>
+    <string>Welcome</string>
    </property>
   </widget>
   <widget class="QLabel" name="ICTU_Image">

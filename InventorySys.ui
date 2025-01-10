@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>widget</class>
+ <widget class="QWidget" name="widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1029</width>
+    <height>743</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ICT U School Inventory System</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ICT logo.png</normaloff>ICT logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
+  <widget class="QLabel" name="ICTU_Image">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>221</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 36pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(52, 0, 156)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="My_resource.qrc">:/Images/ICT logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>20</y>
+     <width>391</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
+color: #FFA500;
+background-color: rgb(52, 0, 156);</string>
+   </property>
+   <property name="text">
+    <string>School Inventory</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
+color: #FFA500;
+background-color: rgb(52, 0, 156);</string>
+   </property>
+   <property name="text">
+    <string>System</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>270</y>
+     <width>391</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 12pt &quot;Arial&quot;;
+color: #FFA500;
+background-color: rgb(52, 0, 156);</string>
+   </property>
+   <property name="text">
+    <string>Welcome to the main application</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="My_resource.qrc"/>
+  <include location="../../../../../Program Files (x86)/Qt Designer/My_resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

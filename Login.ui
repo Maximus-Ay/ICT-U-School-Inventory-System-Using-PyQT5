@@ -20,7 +20,7 @@
   <property name="styleSheet">
    <string notr="true">background-color: white;</string>
   </property>
-  <widget class="QPushButton" name="login_btn">
+  <widget class="QPushButton" name="Sidepane">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -142,31 +142,41 @@ color: rgb(52, 0, 156);</string>
     <string>LOGIN</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="Username_LineEdit">
    <property name="geometry">
     <rect>
      <x>590</x>
      <y>250</y>
-     <width>341</width>
+     <width>371</width>
      <height>61</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;
+
+</string>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="Password_LineEdit">
    <property name="geometry">
     <rect>
      <x>590</x>
      <y>380</y>
-     <width>341</width>
+     <width>371</width>
      <height>61</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+background-color: white;</string>
+   </property>
   </widget>
-  <widget class="QPushButton" name="login_btn_2">
+  <widget class="QPushButton" name="login_btn">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>520</y>
+     <x>610</x>
+     <y>510</y>
      <width>341</width>
      <height>71</height>
     </rect>
@@ -193,7 +203,6 @@ color: rgb(52, 0, 156);</string>
  </widget>
  <resources>
   <include location="My_resource.qrc"/>
-  <include location="../../../../../Program Files (x86)/Qt Designer/My_resource.qrc"/>
  </resources>
  <connections/>
 </ui>
