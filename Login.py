@@ -1,4 +1,5 @@
-from PyQt5 import QtWidgets, uic, QMessageBox
+from PyQt5 import QtWidgets, uic
+from PyQt5.QtWidgets import QMessageBox
 import sqlite3
 
 class LoginWindow(QtWidgets.QWidget):

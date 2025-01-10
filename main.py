@@ -12,7 +12,7 @@ def main():
 
     # Create instances of the pages
     welcome_page = WelcomeWindow(stacked_widget)
-    login_page = LoginWindow()
+    login_page = LoginWindow(stacked_widget)
     inventory_page = InventorySysWindow()
 
     # Add pages to the stacked widget
