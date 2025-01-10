@@ -20,87 +20,382 @@
   <property name="styleSheet">
    <string notr="true">background-color: white;</string>
   </property>
-  <widget class="QLabel" name="ICTU_Image">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>0</y>
-     <width>221</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 36pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(52, 0, 156)</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap resource="My_resource.qrc">:/Images/ICT logo.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>20</y>
-     <width>391</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
-color: #FFA500;
-background-color: rgb(52, 0, 156);</string>
-   </property>
-   <property name="text">
-    <string>School Inventory</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>20</y>
-     <width>171</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
-color: #FFA500;
-background-color: rgb(52, 0, 156);</string>
-   </property>
-   <property name="text">
-    <string>System</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>270</y>
-     <width>391</width>
-     <height>61</height>
+     <x>260</x>
+     <y>630</y>
+     <width>511</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 italic 12pt &quot;Arial&quot;;
 color: #FFA500;
+background-color: rgb(52, 0, 156);
+border-radius: 15px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>1011</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	border-radius: 15px;
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="Dashboard">
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>160</y>
+       <width>401</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 30pt &quot;MS Shell Dlg 2&quot;;
+color: #FFA500;
+background-color: rgb(52, 0, 156);</string>
+     </property>
+     <property name="text">
+      <string>DashBoard</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="AddItemsPage_2">
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background-color: white;
+}</string>
+    </property>
+    <widget class="QPushButton" name="AddItemBtn">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>510</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(78, 140, 255);
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Add Item</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="UpdateItemBtn">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>510</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: white;
+	background-color: green;	
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Update Item</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DeleteItem">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>510</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: white;
+	background-color: red;	
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Delete Item</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ClearBtn">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>510</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	color: white;
+	background-color: orange;	
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>971</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid;
+border-radius: 2px;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_8">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>30</y>
+       <width>451</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Search</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>640</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(52, 0, 156);
+QPushButton::hover{
+	background-color: rgb(29, 127, 157);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="My_resource.qrc">
+     <normaloff>:/Images/Downloads/dashboard.png</normaloff>:/Images/Downloads/dashboard.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>640</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(52, 0, 156);
+QPushButton::hover{
+	background-color: rgb(29, 127, 157);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="My_resource.qrc">
+     <normaloff>:/Images/playlist.png</normaloff>:/Images/playlist.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>710</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;
+color: #FFA500;
 background-color: rgb(52, 0, 156);</string>
    </property>
    <property name="text">
-    <string>Welcome to the main application</string>
+    <string>Dashboard</string>
    </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>710</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;
+color: #FFA500;
+background-color: rgb(52, 0, 156);</string>
+   </property>
+   <property name="text">
+    <string>Modify Items</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>451</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Item Details</string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>ItemID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Item Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Item Quantity</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>70</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Item Location</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>10</y>
+     <width>451</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Sign out and Sign in</string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Item Status</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_7">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Student Matricule</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources>
   <include location="My_resource.qrc"/>
-  <include location="../../../../../Program Files (x86)/Qt Designer/My_resource.qrc"/>
  </resources>
  <connections/>
 </ui>
