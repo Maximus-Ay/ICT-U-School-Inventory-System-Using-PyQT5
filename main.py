@@ -3,7 +3,6 @@ import sys
 from Welcome import WelcomeWindow
 from Login import LoginWindow
 from InventorySys import InventorySysWindow
-import myassets
 
 def main():
     app = QtWidgets.QApplication(sys.argv)

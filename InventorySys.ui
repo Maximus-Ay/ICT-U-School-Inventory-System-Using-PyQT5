@@ -356,7 +356,7 @@ border-radius: 10px;</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="My_resource.qrc">:/Images/ICT logo.png</pixmap>
+      <pixmap resource="Images.qrc">:/Images/ICT logo.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -1015,8 +1015,8 @@ QPushButton::hover{
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="My_resource.qrc">
-     <normaloff>:/Images/Downloads/dashboard.png</normaloff>:/Images/Downloads/dashboard.png</iconset>
+    <iconset resource="Images.qrc">
+     <normaloff>:/Images/dashboard.png</normaloff>:/Images/dashboard.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -1044,7 +1044,7 @@ QPushButton::hover{
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="My_resource.qrc">
+    <iconset resource="Images.qrc">
      <normaloff>:/Images/playlist.png</normaloff>:/Images/playlist.png</iconset>
    </property>
    <property name="iconSize">
@@ -1109,7 +1109,7 @@ QPushButton::hover{
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="My_resource.qrc">
+    <iconset resource="Images.qrc">
      <normaloff>:/Images/sign-out.png</normaloff>:/Images/sign-out.png</iconset>
    </property>
    <property name="iconSize">
@@ -1139,7 +1139,7 @@ background-color: rgb(52, 0, 156);</string>
   </widget>
  </widget>
  <resources>
-  <include location="My_resource.qrc"/>
+  <include location="Images.qrc"/>
  </resources>
  <connections/>
 </ui>

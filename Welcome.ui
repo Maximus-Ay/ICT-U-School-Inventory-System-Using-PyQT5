@@ -128,7 +128,6 @@ QPushButton:pressed {
  </widget>
  <resources>
   <include location="My_resource.qrc"/>
-  <include location="../../../../../Program Files (x86)/Qt Designer/My_resource.qrc"/>
  </resources>
  <connections/>
 </ui>

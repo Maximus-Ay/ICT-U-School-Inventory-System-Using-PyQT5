@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>dashboard.png</file>
+    <file>ICT logo.png</file>
+    <file>sign-out.png</file>
+    <file>playlist.png</file>
+  </qresource>
+</RCC>

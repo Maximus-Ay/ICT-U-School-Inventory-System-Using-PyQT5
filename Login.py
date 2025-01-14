@@ -1,7 +1,7 @@
 from PyQt5 import QtWidgets, uic
 from PyQt5.QtWidgets import QMessageBox
 import sqlite3
-import myassets
+import Images
 
 class LoginWindow(QtWidgets.QWidget):
     def __init__(self, stacked_widget):

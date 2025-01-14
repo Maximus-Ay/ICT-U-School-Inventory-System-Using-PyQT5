@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets, uic
-import myassets
+import Images
 
 class WelcomeWindow(QtWidgets.QWidget):
     def __init__(self, stacked_widget):

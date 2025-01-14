@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets, uic
-import myassets
+import Images
 
 class InventorySysWindow(QtWidgets.QWidget):
     def __init__(self):
@@ -7,4 +7,3 @@ class InventorySysWindow(QtWidgets.QWidget):
         # Load the Inventory System UI
         uic.loadUi("InventorySys.ui", self)
 
-    
