@@ -43,9 +43,9 @@ border-radius: 15px;</string>
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>60</y>
+     <y>0</y>
      <width>1011</width>
-     <height>561</height>
+     <height>621</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -86,7 +86,7 @@ background-color: white;
      <property name="geometry">
       <rect>
        <x>150</x>
-       <y>510</y>
+       <y>560</y>
        <width>161</width>
        <height>51</height>
       </rect>
@@ -107,7 +107,7 @@ background-color: white;
      <property name="geometry">
       <rect>
        <x>340</x>
-       <y>510</y>
+       <y>560</y>
        <width>161</width>
        <height>51</height>
       </rect>
@@ -128,7 +128,7 @@ background-color: white;
      <property name="geometry">
       <rect>
        <x>530</x>
-       <y>510</y>
+       <y>560</y>
        <width>161</width>
        <height>51</height>
       </rect>
@@ -149,7 +149,7 @@ background-color: white;
      <property name="geometry">
       <rect>
        <x>720</x>
-       <y>510</y>
+       <y>560</y>
        <width>161</width>
        <height>51</height>
       </rect>
@@ -170,7 +170,7 @@ background-color: white;
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>90</y>
+       <y>140</y>
        <width>1001</width>
        <height>411</height>
       </rect>
@@ -223,8 +223,8 @@ border-radius: 2px;</string>
     <widget class="QLineEdit" name="lineEdit_8">
      <property name="geometry">
       <rect>
-       <x>460</x>
-       <y>30</y>
+       <x>470</x>
+       <y>90</y>
        <width>521</width>
        <height>41</height>
       </rect>
@@ -238,6 +238,150 @@ border-radius: 2px;</string>
      <property name="placeholderText">
       <string>Search</string>
      </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>20</y>
+       <width>521</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid;
+font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="title">
+      <string>Sign out and Sign in</string>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Student Matricule</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_9">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>20</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Quantity Out</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>451</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid;
+font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="title">
+      <string>Item Details</string>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>ItemID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Item Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Item Quantity</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>70</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>BS Chumbo Hall</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Eric Mbarika</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>George Mbarika</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pondi Hall</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>IT Hall</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cisco Lab</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>French Hall</string>
+       </property>
+      </item>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -334,150 +478,6 @@ background-color: rgb(52, 0, 156);</string>
    <property name="text">
     <string>Modify Items</string>
    </property>
-  </widget>
-  <widget class="QGroupBox" name="groupBox">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>451</width>
-     <height>121</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border: 1px solid;
-font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
-   </property>
-   <property name="title">
-    <string>Item Details</string>
-   </property>
-   <widget class="QLineEdit" name="lineEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>201</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>ItemID</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>20</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>Item Name</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>70</y>
-      <width>201</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>Item Quantity</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>70</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>BS Chumbo Hall</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Eric Mbarika</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>George Mbarika</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Pondi Hall</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>IT Hall</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Cisco Lab</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>French Hall</string>
-     </property>
-    </item>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="groupBox_2">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>10</y>
-     <width>521</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border: 1px solid;
-font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
-   </property>
-   <property name="title">
-    <string>Sign out and Sign in</string>
-   </property>
-   <widget class="QLineEdit" name="lineEdit_7">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>Student Matricule</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_9">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>20</y>
-      <width>151</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>Quantity Out</string>
-    </property>
-   </widget>
   </widget>
  </widget>
  <resources>
