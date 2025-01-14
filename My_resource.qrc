@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="Images">
+    <file>sign-out.png</file>
     <file>download.png</file>
     <file>playlist.png</file>
     <file>add.png</file>
