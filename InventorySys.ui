@@ -161,9 +161,9 @@ color: #FFA500;</string>
     <widget class="QLabel" name="label_15">
      <property name="geometry">
       <rect>
-       <x>180</x>
+       <x>150</x>
        <y>210</y>
-       <width>161</width>
+       <width>221</width>
        <height>31</height>
       </rect>
      </property>
@@ -173,7 +173,7 @@ color: #FFA500;
 font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>Total Item Quantity</string>
+      <string>Total Item Quantity in Stock</string>
      </property>
     </widget>
     <widget class="QLabel" name="TotalItemQty">
@@ -227,7 +227,7 @@ color: #FFA500;
 font: 30pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>  10</string>
+      <string>    10</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_19">
@@ -299,7 +299,7 @@ color: #FFA500;
 font: 30pt &quot;MS Shell Dlg 2&quot;;</string>
      </property>
      <property name="text">
-      <string>  10</string>
+      <string>      10</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_23">

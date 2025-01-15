@@ -68,12 +68,15 @@ class InventorySysWindow(QtWidgets.QWidget):
         # Connect the search bar to the search function
         self.SearchBar_2.textChanged.connect(self.search_items2)
 
+        self.dashboard()
+
     ##############################################
     #####    MOVE TO THE DASHBOARD 
     ##############################################
     def show_dashboard(self):
         """Switch to the Dashboard page."""
         self.stackedWidget.setCurrentIndex(0) 
+        self.dashboard()
 
     ##############################################
     #####    MOVE TO THE MODIFY ITEMS PAGE 
@@ -687,3 +690,34 @@ class InventorySysWindow(QtWidgets.QWidget):
         except sqlite3.Error as e:
             QMessageBox.critical(self, "Database Error", f"An error occurred while searching: {e}")
 
+    def dashboard(self):
+        """Update dashboard labels with inventory statistics."""
+        try:
+            # Connect to the database
+            connection = sqlite3.connect("Inventory.db")
+            cursor = connection.cursor()
+
+            # --- Calculate Total Item Quantity ---
+            cursor.execute("SELECT SUM(QuantityInStock) FROM Inventory")
+            total_item_qty = cursor.fetchone()[0] or 0  # Handle NULL results
+            self.TotalItemQty.setText(f"{total_item_qty}")
+
+            # --- Calculate Quantity Signed Out ---
+            cursor.execute("SELECT SUM(QuantityOut) FROM TrackItems")
+            qty_signed_out = cursor.fetchone()[0] or 0  # Handle NULL results
+            self.QtySignedOut.setText(f"{qty_signed_out}")
+
+            # --- Calculate Remaining Items ---
+            remaining_items = total_item_qty - qty_signed_out
+            self.RemainingItems.setText(f"{remaining_items}")
+
+            # --- Calculate Number of Items in System ---
+            cursor.execute("SELECT COUNT(*) FROM Inventory")
+            number_of_items = cursor.fetchone()[0]
+            self.NumberOFItemsInSystem.setText(f"{number_of_items}")
+
+            # Close the database connection
+            connection.close()
+
+        except sqlite3.Error as e:
+            QMessageBox.critical(self, "Database Error", f"Error updating dashboard: {e}")
