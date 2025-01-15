@@ -52,7 +52,7 @@ border-radius: 15px;</string>
     <string notr="true"/>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>2</number>
    </property>
    <widget class="QWidget" name="Dashboard">
     <widget class="QLabel" name="label">
@@ -748,6 +748,16 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
         <string>Item Status</string>
        </property>
       </item>
+      <item>
+       <property name="text">
+        <string>Signed Out</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Signed In</string>
+       </property>
+      </item>
      </widget>
      <widget class="QComboBox" name="ItemLocation">
       <property name="geometry">
@@ -829,7 +839,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
        </rect>
       </property>
       <property name="placeholderText">
-       <string>Quantity</string>
+       <string>Quantity Out</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="StudentMatricule">
@@ -865,6 +875,9 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
       <string notr="true">border: 1px solid;
 border-radius: 2px;
 font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
       <number>134</number>
@@ -913,7 +926,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
      </column>
     </widget>
-    <widget class="QPushButton" name="DeleteItem_2">
+    <widget class="QPushButton" name="Delete">
      <property name="geometry">
       <rect>
        <x>520</x>
@@ -931,10 +944,10 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
 }</string>
      </property>
      <property name="text">
-      <string>Download</string>
+      <string>Delete</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="AddItemBtn_2">
+    <widget class="QPushButton" name="Sign_Out">
      <property name="geometry">
       <rect>
        <x>140</x>
@@ -976,7 +989,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
       <string>Clear</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="UpdateItemBtn_2">
+    <widget class="QPushButton" name="Sign_In">
      <property name="geometry">
       <rect>
        <x>330</x>
