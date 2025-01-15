@@ -47,6 +47,18 @@ Run the application:python main.py
 
 ## ICT-U-School-Inventory-System-Using-PyQT5/
 
+| -- Folder: __pycache__  
+| -- Images.py
+| -- Images.qrc
+| -- Inventory.db
+| -- InventorySys.py
+| -- Login.py
+| -- Login.ui
+| -- LoginDB.db
+| -- main.py
+| -- README.md
+| -- Welcome.py
+| -- Welcome.ui
 
 ## ✨ Contribution Guidelines
 We welcome contributions! Please follow these steps to contribute:
