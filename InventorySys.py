@@ -475,10 +475,19 @@ class InventorySysWindow(QtWidgets.QWidget):
         # Get current date and time
         current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
+        quantity_out = int(quantity_out)
+
         try:
             # Save the data to the TrackItems table
             connection = sqlite3.connect("Inventory.db")
             cursor = connection.cursor()
+
+            # Subtract the quantity from the Inventory table
+            cursor.execute("""
+                UPDATE Inventory
+                SET ItemQuantity = ItemQuantity - ?
+                WHERE ItemID = ?
+            """, (quantity_out, item_id))
 
             cursor.execute("""
                 INSERT INTO TrackItems (ItemID, ItemName, ItemStatus, ItemLocation, QuantityOut, StudentMatricule, Date)
@@ -491,6 +500,7 @@ class InventorySysWindow(QtWidgets.QWidget):
             # Populate the SignInSignOutTable with the latest data
             self.load_sign_in_sign_out_data()
             self.clear_fields()
+            self.load_table_data()
 
             QMessageBox.information(self, "Success", "Item successfully signed out!")
 
@@ -559,6 +569,7 @@ class InventorySysWindow(QtWidgets.QWidget):
         item_location = self.ItemLocation.currentText()
         quantity_in = 0  # Set quantity to 0 upon sign-in
         student_matricule = self.StudentMatricule.text().strip()
+        quantity_out = self.selected_sign_in_row_data[4]  # Quantity used during sign-out
 
         # Validate inputs before saving
         if not item_id or not item_name or item_status == "Item Status" or item_location == "Location" or not student_matricule:
@@ -572,6 +583,13 @@ class InventorySysWindow(QtWidgets.QWidget):
             connection = sqlite3.connect("Inventory.db")
             cursor = connection.cursor()
 
+            # Add back the quantity to the Inventory table
+            cursor.execute("""
+                UPDATE Inventory
+                SET ItemQuantity = ItemQuantity + ?
+                WHERE ItemID = ?
+            """, (quantity_out, item_id))
+
             cursor.execute("""
                 UPDATE TrackItems
                 SET ItemName = ?, ItemStatus = ?, ItemLocation = ?, QuantityOut = ?, StudentMatricule = ?, Date = ?
@@ -584,6 +602,7 @@ class InventorySysWindow(QtWidgets.QWidget):
             # Refresh the SignInSignOutTable to reflect updated data
             self.load_sign_in_sign_out_data()
             self.clear_fields()
+            self.load_table_data()
 
             QMessageBox.information(self, "Success", "Item successfully signed in!")
 
