@@ -1,8 +1,9 @@
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtCore
 import sys
 from Welcome import WelcomeWindow
 from Login import LoginWindow
 from InventorySys import InventorySysWindow
+
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
@@ -27,6 +28,11 @@ def main():
     #Setting the dimensions of the stackedwidgets
     stacked_widget.setFixedHeight(743)
     stacked_widget.setFixedWidth(1029)
+
+    # Disable the maximize button
+    stacked_widget.setWindowFlags(
+        stacked_widget.windowFlags() & ~QtCore.Qt.WindowMaximizeButtonHint
+    )
 
     # Show the stacked widget
     stacked_widget.show()
